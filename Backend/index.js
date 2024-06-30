@@ -9,7 +9,7 @@ import userRoute from "./route/user.route.js";
 const app = express();
 
 const corsConfig={
-    origin: "*",
+    origin: "https://book-store-seven-rho.vercel.app",
     credential: true,
     method: ["GET","POST"]
 }
