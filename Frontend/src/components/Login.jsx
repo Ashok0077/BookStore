@@ -16,7 +16,7 @@ function Login() {
       password: data.password,
     };
     await axios
-      .get("https://book-store-api-hazel.vercel.app/user/login", userInfo)
+      .get("/user/login", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
