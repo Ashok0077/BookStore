@@ -8,6 +8,12 @@ import userRoute from "./route/user.route.js";
 
 const app = express();
 
+const corsConfig={
+    origin: "*",
+    credential: true,
+    method: ["GET","POST"]
+}
+
 app.use(cors());
 app.use(express.json());
 
